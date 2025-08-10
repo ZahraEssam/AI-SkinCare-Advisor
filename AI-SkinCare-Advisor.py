@@ -5,11 +5,10 @@ import google.generativeai as genai
 from tkinter import PhotoImage
 
 # Set the API Key for the model
-genai.configure(api_key="AIzaSyCN-fUFvOaKeXxH3TsRw8E8kiWEKKNNRpI")
+genai.configure(api_key="AIzaSyB6meCG-MgBRqudBPTW3RSkfTxE3QMnq4k")
 
 # Set up the model to use
-model = genai.GenerativeModel(model_name="models/gemini-1.5-pro")
-
+model = genai.GenerativeModel(model_name="gemini-2.5-flash")
 # List of skin conditions
 skin_conditions = ["Basal Cell Carcinoma", "Squamous Cell Carcinoma", "Melanoma", "Eczema", "Psoriasis", "Acne", "Rosacea"]
 
@@ -141,3 +140,4 @@ response_box.pack(pady=150)
 
 # Start the main loop of the window
 root.mainloop()
+
